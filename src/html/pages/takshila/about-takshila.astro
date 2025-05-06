@@ -1,0 +1,532 @@
+---
+import Head from '../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-xl bg-primary">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text-light dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item active" href="/takshila/about-takshila"
+                        >About Takshila</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/takshila/chairman-message">Chairman Message</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/takshila/our-associates"
+                        >Our Associates/Our School Partners</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="/takshila/faqs">FAQs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Feeds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">All Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Our Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Franchise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Test Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Study Materials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Quiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">TNTSE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contact Us</a>
+                </li>
+              </ul>
+
+              <!-- Move buttons to the left end -->
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-2 mb-2 mb-lg-0">
+                  <a href="#" class="btn btn-secondary px-2">
+                    <i class="ri-login-box-line"></i> Login
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="btn btn-secondary px-2">
+                    <i class="ri-user-line"></i> Sign up
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="py-3 border-bottom">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="https://takshilainstitute.in/images/1732293272tashila-logo.jpeg"
+                height="40"
+                alt="Takshila Institute"
+              />
+            </a>
+            <div class="col-12 col-lg-auto mb-3 mb-lg-0 d-flex justify-content-center">
+              <button class="btn btn-outline-primary ms-2 position-relative">
+                <i class="ri-heart-fill"></i>
+                <span
+                  class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-circle"
+                  style="z-index: 10;">3</span
+                >
+              </button>
+              <button class="btn btn-outline-primary ms-2 position-relative">
+                <i class="ri-shopping-cart-2-fill"></i>
+                <span
+                  class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-circle"
+                  style="z-index: 10;">1</span
+                >
+              </button>
+              <form role="search" class="ms-2">
+                <div class="input-group h-100">
+                  <input
+                    type="search"
+                    class="form-control border-primary"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="my-5">
+          <div class="container">
+            <h2 class="text-primary">About Takshila Institute</h2>
+            <p>
+              Established in 1998, Takshila Institute was founded with the aim of delivering
+              high-quality education to students preparing for a diverse range of competitive and
+              academic examinations. Over the past 25 years, the institute has evolved into a
+              dynamic, responsible, and results-oriented educational entity, driven by lofty ideals
+              and an unwavering commitment to excellence. Our focus includes shaping students
+              through NEET & JEE classes, nourishing in course, and establishing success in Nesian
+              Examinations through preparatory classes. The institute's well-documented track record
+              and the growing number of successful selections have earned us the trust and respect
+              of numerous aspirants and their parents.
+            </p>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="https://takshilainstitute.in/images/about_img.jpeg"
+                  alt="about page image"
+                  class="img-fluid rounded shadow-sm mb-5 mb-md-0"
+                />
+              </div>
+              <div class="col-md-8">
+                <h3 class="text-primary">Takshila At Glance</h3>
+                <p>
+                  Takshila offers offline classrooms & online (Takshila Live) and Distance Learning
+                  Programmes (DLP) for foundation / IIT-JEE / NEET / NTSE / Olympiad / INSPIRE.
+                </p>
+                <p>Empaneled by Delhi, Jammu & Kashmir, and Uttarakhand Govt.</p>
+                <p>25,000+ successful results in Engineering and Medical entrance exams.</p>
+                <p>
+                  Awarded 5 times as the top coaching institute for excellence by CSR India's top
+                  leading magazine.
+                </p>
+                <p>PAN-INDIA network of 35 centers in about 13 states.</p>
+                <p>Total 80,000+ students have joined, and 27,281 alumni are held.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Timeline section -->
+        <section class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                <h3 class="text-primary text-center mb-4">Success Journey of Takshila</h3>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Beginning Of New Chapter in South India</h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2023</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Crossed 35+ Centers in pan India</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2022</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      Takshila Institute in empanelled with Delhi Govt. for free coaching of Medical
+                      / Engineering aspirants
+                    </h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2022</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Launched Takshila Live Digital Online Class</h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2020</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Launched DPL & Digital</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2019</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Launched Online Test Series</h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2018</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Our students secured 6th rank in AIIMS</h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2017</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      Our Stadent Secured 25th Rank in NEET & Tremendous under 100 Rank in AIIMS
+                    </h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2016</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      Takshila awarded 5th times as the Best Coaching Institute
+                    </h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2014</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      Takshila Institute is empanelled with Uttarakhand Govt. for free coaching of
+                      Medical / Engineering aspirants
+                    </h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2012</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Launched Foundation Wing</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2011</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      1st time Takshila awarded as the best coaching institute
+                    </h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2009</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      Launched Takshila National Talent Scholarship Exam (TNTSE) to Reward & Mentor
+                      meritorious Students
+                    </h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2008</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Launched School Campus Coaching</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2007</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Opened Janakpuri Branch</h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2006</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Opened first franchise Center in Dehradun</h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2005</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Medical Wing Started</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2004</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Started All India Rankers Test Series for IIT</h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2003</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-success-subtle border-success shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Open Second Branch in Rohini</h5>
+                    <span class="badge bg-success fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2001</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-danger-subtle border-danger shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">Got 5th Rank in DCE</h5>
+                    <span class="badge bg-danger fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >2000</span
+                    >
+                  </div>
+                </div>
+                <div class="card bg-primary-subtle border-primary shadow-sm mb-3 position-relative">
+                  <div class="card-body">
+                    <h5 class="card-title me-5">
+                      First Takshila Branch established in paschim Vihar (West Delhi)
+                    </h5>
+                    <span class="badge bg-primary fs-6 p-2 position-absolute top-0 end-0 m-3"
+                      >1998</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-primary">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 pt-4 my-auto">
+                <div>
+                  <h3 class="text-light mb-4">Download our apps & Start learning now</h3>
+                  <div class="input-group mb-4 w-75">
+                    <span class="input-group-text">+91</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your mobile number"
+                    />
+                    <button class="btn btn-secondary">Get Link</button>
+                  </div>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.neeteasyapp&hl=en"
+                    class="btn p-0"
+                  >
+                    <img
+                      src="https://takshilainstitute.in/images/1717249857android-app.png"
+                      alt="Icon"
+                      class="d-inline-block align-middle"
+                    />
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.neeteasyapp&hl=en"
+                    class="btn p-0"
+                  >
+                    <img
+                      src="https://takshilainstitute.in/images/1717249870windows-app.png"
+                      alt="Icon"
+                      class="d-inline-block align-middle"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 p-4">
+                <img
+                  src="https://takshilainstitute.in/images/1733042248takshila-combine-phone-removebg-preview.png"
+                  class="img-fluid"
+                  alt="cta image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="mb-3">
+              <a href="https://takshilainstitute.in">
+                <img
+                  src="https://takshilainstitute.in/images/1732293272tashila-logo.jpeg"
+                  class="img-fluid mb-2"
+                  alt="Takshila Institute"
+                />
+              </a>
+              <p class="text-body-secondary">© 2025 Takshila Institute. All rights reserved.</p>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+              <h5>Important Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">All Courses</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Test Series</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Study Materials</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Seminar Registration</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Popular Courses</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Foundation</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">IIT JEE</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">NEET</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Get in Touch</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="ri-map-pin-2-line text-secondary me-2"></i>
+                  Head Office, Janakpuri: A-1/169, Janakpuri, Opp. Metro Pillar No. 616
+                </li>
+                <li class="mb-2">
+                  <i class="ri-phone-line text-secondary me-2"></i> +918076986191
+                </li>
+                <li class="mb-2">
+                  <i class="ri-whatsapp-line text-secondary me-2"></i> +918076986191
+                </li>
+                <li class="mb-2">
+                  <i class="ri-mail-line text-secondary me-2"></i>contact@takshilainstitute.in
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- All Scripts -->
+    <Scripts />
+  </body>
+</html>

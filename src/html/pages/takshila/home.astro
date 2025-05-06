@@ -1,0 +1,1257 @@
+---
+import Head from '../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-xl bg-primary">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text-light dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="/takshila/about-takshila">About Takshila</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/takshila/chairman-message">Chairman Message</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/takshila/our-associates"
+                        >Our Associates/Our School Partners</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="/takshila/faqs">FAQs</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Feeds</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">All Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Our Centers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Franchise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Test Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Study Materials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Quiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">TNTSE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contact Us</a>
+                </li>
+              </ul>
+
+              <!-- Move buttons to the left end -->
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-2 mb-2 mb-xl-0">
+                  <a href="#" class="btn btn-secondary px-2">
+                    <i class="ri-login-box-line"></i> Login
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="btn btn-secondary px-2">
+                    <i class="ri-user-line"></i> Sign up
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="py-3 border-bottom">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="https://takshilainstitute.in/images/1732293272tashila-logo.jpeg"
+                height="40"
+                alt="Takshila Institute"
+              />
+            </a>
+            <div class="col-12 col-lg-auto mb-3 mb-lg-0 d-flex justify-content-center">
+              <button class="btn btn-outline-primary ms-2 position-relative">
+                <i class="ri-heart-fill"></i>
+                <span
+                  class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-circle"
+                  style="z-index: 10;">3</span
+                >
+              </button>
+              <button class="btn btn-outline-primary ms-2 position-relative">
+                <i class="ri-shopping-cart-2-fill"></i>
+                <span
+                  class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-circle"
+                  style="z-index: 10;">1</span
+                >
+              </button>
+              <form role="search" class="ms-2">
+                <div class="input-group h-100">
+                  <input
+                    type="search"
+                    class="form-control border-primary"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-primary" type="submit">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="mb-5 bg-primary">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="pt-5 pb-0 pb-md-5">
+                  <div class="text-start text-light">
+                    <h1 class="display-4 fw-bold">
+                      Dream. Achieve. <span class="text-secondary">Succeed.</span>
+                    </h1>
+                    <p class="mb-5 fs-3">Transforming students into leaders for over 26 years.</p>
+                    <form>
+                      <div class="mb-3">
+                        <input
+                          type="text"
+                          class="form-control bg-primary-subtle"
+                          id="name"
+                          placeholder="Your name"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="email"
+                          class="form-control bg-primary-subtle"
+                          id="email"
+                          placeholder="Your email address"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <input
+                          type="tel"
+                          class="form-control bg-primary-subtle"
+                          id="mobile"
+                          placeholder="Your mobile number"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <textarea
+                          class="form-control bg-primary-subtle"
+                          id="message"
+                          rows="4"
+                          placeholder="Enter your message"></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-secondary">Enquire Now</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/10/09/08/25/ai-generated-8303579_1280.png"
+                  class="img-fluid"
+                  alt="hero section image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hero Section 2 -->
+        <section class="mb-5 bg-primary">
+          <div class="container">
+            <div class="row my-5">
+              <div class="col-md-5">
+                <div class="text-light mb-3">
+                  <i class="ri-medal-2-line fs-1"></i>
+                  <h5 class="d-inline">27 years of legacy</h5>
+                </div>
+                <div class="bg-secondary text-light text-center p-2 rounded mb-4 d-inline-block">
+                  <h5 class="mb-0">Online/Offline</h5>
+                </div>
+                <h4 class="text-light mb-2">Join Our Crash Course</h4>
+                <h1 class="text-light mb-4">JEE-MAIN & NEET 2026</h1>
+                <a href="#" class="btn btn-lg btn-outline-secondary text-light">Admissions Open</a>
+              </div>
+              <div class="col-md-7">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="mb-5">
+          <div class="container">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://takshilainstitute.in/images/md_sir%20(1).jpg"
+                alt="picture of the managing director"
+                class="img-fluid rounded-circle mb-3"
+                style="width: 100px; height: 100px; object-fit: cover;"
+              />
+              <div class="ms-3">
+                <h2 class="text-dark">
+                  Message from N.K. Gupta <span class="text-muted fs-5">(Managing Director)</span>
+                </h2>
+                <blockquote class="blockquote bg-primary-subtle text-muted p-3 rounded">
+                  <p>"It gives me immense pleasure to welcome you at Takshila Institute."</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="mb-3">
+              <p class="text-muted fs-5 mb-3" style="text-align: justify;">
+                It gives immense pleasure to welcome you at Takshila Institute, which is reckoned
+                for grooming trailblazers and tender setters for more than 26 years. Takshila has
+                heralded an unprecedented regulation in the coaching industry through transforming
+                the lives of students aspiring to get into premium medical and engineering
+                institutes across the country and realizing their dreams. Over the years, Takshila
+                has become the most preferred choice of parents and students and has become
+                synonymous with "credibility", "Transparency", "Trust", and the "Best" in the
+                Industry. Now, we have PAN-INDIA Networks of 25 centers in about 10 states.
+              </p>
+              <p class="text-muted fs-5 mb-3" style="text-align: justify;">
+                Every year, numerous students appear in Engineering/Medical Entrance Exams across
+                India, with dreams of qualifying and scoring a good rank. While treading this path
+                of excellence, it becomes quintessential to enroll in an Institute like Takshila
+                which aims at holistic grooming of its students in a meritocratic environment
+                through experienced and permanent faculty, teaching with the latest technological
+                aids. After all, "Nothing succeeds like success".
+              </p>
+              <p class="text-muted fs-5" style="text-align: justify;">
+                In other Achievement, based on our glorious past and excellent track record Takshila
+                Institute is empaneled with Delhi Government to conduct free classes for one-year
+                program for Medical/Engineer Aspirants who are preparing under “JAI BHIM
+                MUKHYAMANTRI PRATIBHA VIKAS YOJANA”. in Delhi.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Courses Section -->
+        <section class="mb-5">
+          <div class="container">
+            <h3 class="text-center mb-4">Our Popular Courses</h3>
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true">ALL</button
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="foundation-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#foundation-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="foundation-tab-pane"
+                      aria-selected="false">FOUNDATION</button
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="iit-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#iit-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="iit-tab-pane"
+                      aria-selected="false">IIT JEE</button
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="neet-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#neet-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="neet-tab-pane"
+                      aria-selected="false">NEET</button
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="row mt-4">
+                  <div class="col-lg-3 mb-2">
+                    <div class="card border-1 shadow-sm">
+                      <img
+                        src="https://takshilainstitute.in/images/courses/1733561602jee-dropper-english-offline.jpg"
+                        class="card-img-top"
+                        alt="Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Achievers JEE (English)</h5>
+                        <span class="badge text-bg-light border shadow-sm">English</span>
+                        <span class="badge text-bg-light border shadow-sm">Hindi</span>
+                        <span class="text-muted small">* validity 14 month</span>
+                      </div>
+                      <div class="card-footer">
+                        <div class="fw-semibold fs-5">
+                          ₹90,000 <del class="text-muted">₹1,50,000</del>
+                        </div>
+                        <div class="text-primary mb-2">
+                          <i class="ri-price-tag-3-fill"></i> 40% Discount
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="btn btn-outline-primary me-2 w-100">Explore</button>
+                          <button class="btn btn-primary w-100">Buy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 mb-2">
+                    <div class="card border-1 shadow-sm">
+                      <img
+                        src="https://takshilainstitute.in/images/courses/1733561869Jee-dropper-english-online.jpg"
+                        class="card-img-top"
+                        alt="Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Achievers JEE (English)</h5>
+                        <span class="badge text-bg-light border shadow-sm">English</span>
+                        <span class="badge text-bg-light border shadow-sm">Hindi</span>
+                        <span class="text-muted small">* validity 14 month</span>
+                      </div>
+                      <div class="card-footer">
+                        <div class="fw-semibold fs-5">
+                          ₹5,600 <del class="text-muted">₹9,393</del>
+                        </div>
+                        <div class="text-primary mb-2">
+                          <i class="ri-price-tag-3-fill"></i> 40% Discount
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="btn btn-outline-primary me-2 w-100">Explore</button>
+                          <button class="btn btn-primary w-100">Buy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 mb-2">
+                    <div class="card border-1 shadow-sm">
+                      <img
+                        src="https://takshilainstitute.in/images/courses/1733561950jee-dropper-hindi-offline.jpg"
+                        class="card-img-top"
+                        alt="Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Achievers JEE (Hindi)</h5>
+                        <span class="badge text-bg-light border shadow-sm">Hindi</span>
+                        <span class="badge text-bg-light border shadow-sm">English</span>
+                        <span class="text-muted small">* validity 14 month</span>
+                      </div>
+                      <div class="card-footer">
+                        <div class="fw-semibold fs-5">
+                          ₹90,000 <del class="text-muted">₹1,50,000</del>
+                        </div>
+                        <div class="text-primary mb-2">
+                          <i class="ri-price-tag-3-fill"></i> 40% Discount
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="btn btn-outline-primary me-2 w-100">Explore</button>
+                          <button class="btn btn-primary w-100">Buy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 mb-2">
+                    <div class="card border-1 shadow-sm">
+                      <img
+                        src="https://takshilainstitute.in/images/courses/1733562007jee-dropper-hindi-online.jpg"
+                        class="card-img-top"
+                        alt="Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Achievers JEE (Hindi)</h5>
+                        <span class="badge text-bg-light border shadow-sm">Hindi</span>
+                        <span class="badge text-bg-light border shadow-sm">English</span>
+                        <span class="text-muted small">* validity 14 month</span>
+                      </div>
+                      <div class="card-footer">
+                        <div class="fw-semibold fs-5">
+                          ₹5,600 <del class="text-muted">₹9,393</del>
+                        </div>
+                        <div class="text-primary mb-2">
+                          <i class="ri-price-tag-3-fill"></i> 40% Discount
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="btn btn-outline-primary me-2 w-100">Explore</button>
+                          <button class="btn btn-primary w-100">Buy Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="foundation-tab-pane"
+                role="tabpanel"
+                aria-labelledby="foundation-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="iit-tab-pane"
+                role="tabpanel"
+                aria-labelledby="iit-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="neet-tab-pane"
+                role="tabpanel"
+                aria-labelledby="neet-tab"
+                tabindex="0"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Takshila Section -->
+        <section class="mb-5">
+          <div class="container">
+            <h3 class="text-center mb-4">Why Takshila Institute</h3>
+            <div class="row">
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-school-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Best Results</h3>
+                      <p class="mb-0">
+                        Highest percentage of selections in IIT-JEE, NEET for 25 consecutive years.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-presentation-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Best Faculty Team</h3>
+                      <p class="mb-0">
+                        More than 200 full-time faculties, including IITians and Gold Medalist
+                        Doctors.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-graduation-cap-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Best Academics</h3>
+                      <p class="mb-0">
+                        Takshila Institute is run by academicians, not businessmen, focusing on
+                        academics over marketing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-empathize-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Student Care</h3>
+                      <p class="mb-0">
+                        Ultimate student care, motivational counseling, and excellent
+                        student-teacher ratio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-psychotherapy-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Regular Counseling</h3>
+                      <p class="mb-0">
+                        Boost motivation to focus on areas needing improvement and avoid mistakes in
+                        JEE/NEET exams.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-book-shelf-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Takshila Library</h3>
+                      <p class="mb-0">
+                        Access a variety of books and references at Takshila centers at regular
+                        intervals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-questionnaire-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Regular Doubt Sessions</h3>
+                      <p class="mb-0">
+                        Individual attention through booklet discussions and doubt-solving sessions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-account-box-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Student Monitoring</h3>
+                      <p class="mb-0">
+                        Regular attendance, CCTV classroom surveillance, SMS alerts, emails, and
+                        notifications.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-macbook-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Online Test Series</h3>
+                      <p class="mb-0">
+                        Appear in tests similar to JEE, BITSAT, and NEET to get All India Rank.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-device-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Real-Time All India Mock Tests</h3>
+                      <p class="mb-0">
+                        Advanced infrastructure for online tests for thousands of aspiring students
+                        nationwide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-shield-check-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">The Quality</h3>
+                      <p class="mb-0">
+                        We maintain quality in every activity and every action at all times.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card h-100 border-1">
+                  <div class="card-body p-4 d-flex">
+                    <div>
+                      <div
+                        class="border border-primary bg-primary-subtle rounded d-flex align-items-center justify-content-center mb-3"
+                        style="width: 48px; height: 48px;"
+                      >
+                        <i class="ri-survey-line fs-3 text-primary"></i>
+                      </div>
+                      <h3 class="mb-2">Research & Development</h3>
+                      <p class="mb-0">
+                        Constant updates to teaching methodology, study material, and course
+                        structure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="mb-5 p-4 bg-primary">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card bg-primary border-0 p-3 h-100">
+                  <div class="card-body text-light text-center p-0">
+                    <i class="ri-book-3-line fs-1"></i>
+                    <h5 class="card-title">Online Study</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card bg-primary border-0 p-3 h-100">
+                  <div class="card-body text-light text-center p-0">
+                    <i class="ri-smartphone-line fs-1"></i>
+                    <h5 class="card-title">Mobile App</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card bg-primary border-0 p-3 h-100">
+                  <div class="card-body text-light text-center p-0">
+                    <i class="ri-user-3-line fs-1"></i>
+                    <h5 class="card-title">Expert Faculties</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card bg-primary border-0 p-3 h-100">
+                  <div class="card-body text-light text-center p-0">
+                    <i class="ri-video-on-line fs-1"></i>
+                    <h5 class="card-title">Video Classes & Videos</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="text-primary fs-5">SERVICES</h4>
+                <h3>Our Services at Takshila Institute</h3>
+                <p>
+                  At Takshila Institute, we are dedicated to empowering students for success in
+                  their academic journey. With over 26 years of experience, we have become a trusted
+                  name in coaching for medical and engineering entrance exams. Our holistic
+                  approach, supported by experienced faculty and cutting-edge teaching methods,
+                  ensures that each student is prepared to achieve their goals.
+                </p>
+                <a href="#" class="btn btn-primary mb-4">Learn more</a>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-6 mb-4">
+                    <div class="card h-100 bg-primary-subtle border-1">
+                      <div class="card-body p-4 d-flex">
+                        <div>
+                          <i class="ri-user-3-line text-primary fs-3"></i>
+                          <h3 class="mb-2">Expert Faculty</h3>
+                          <p class="mb-0">
+                            Highly qualified and dedicated educators providing personalized
+                            mentorship and support.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <div class="card h-100 bg-primary-subtle border-1">
+                      <div class="card-body p-4 d-flex">
+                        <div>
+                          <i class="ri-shield-flash-line text-primary fs-3"></i>
+                          <h3 class="mb-2">Learning Tools</h3>
+                          <p class="mb-0">
+                            Utilization of the latest technological aids to enhance the learning
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <div class="card h-100 bg-primary-subtle border-1">
+                      <div class="card-body p-4 d-flex">
+                        <div>
+                          <i class="ri-graduation-cap-line text-primary fs-3"></i>
+                          <h3 class="mb-2">Coaching Programs</h3>
+                          <p class="mb-0">
+                            Guidance for medical and engineering entrance exams across India.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <div class="card h-100 bg-primary-subtle border-1">
+                      <div class="card-body p-4 d-flex">
+                        <div>
+                          <i class="ri-map-pin-5-line text-primary fs-3"></i>
+                          <h3 class="mb-2">PAN-India Centers</h3>
+                          <p class="mb-0">
+                            25 centers across 10 states, offering easy access to quality education.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Course Category Section -->
+        <section class="mb-5">
+          <div class="container">
+            <h3 class="text-center mb-4">Course Category</h3>
+            <div class="row">
+              <div class="col-lg-2 offset-lg-3 mb-2 mb-lg-0 text-center">
+                <a
+                  href="#"
+                  class="btn btn-light d-inline-block rounded-circle border shadow-sm m-2 mb-2"
+                  style="width: 120px; height: 120px; padding: 8px;"
+                >
+                  <img
+                    src="https://takshilainstitute.in/images/17323425111727679243logo-neet-removebg-preview-1.png"
+                    alt="NEET icon"
+                    class="img-fluid rounded-circle"
+                  />
+                </a>
+                <h5>NEET</h5>
+              </div>
+              <div class="col-lg-2 mb-2 mb-lg-0 text-center">
+                <a
+                  href="#"
+                  class="btn btn-light d-inline-block rounded-circle border shadow-sm m-2 mb-2"
+                  style="width: 120px; height: 120px; padding: 8px;"
+                >
+                  <img
+                    src="https://takshilainstitute.in/images/1732516415IITJEE-removebg-preview.png"
+                    alt="IIT JEE icon"
+                    class="img-fluid rounded-circle"
+                  />
+                </a>
+                <h5>IIT JEE</h5>
+              </div>
+              <div class="col-lg-2 mb-2 mb-lg-0 text-center">
+                <a
+                  href="#"
+                  class="btn btn-light d-inline-block rounded-circle border shadow-sm m-2 mb-2"
+                  style="width: 120px; height: 120px; padding: 8px;"
+                >
+                  <img
+                    src="https://takshilainstitute.in/images/1733724097foundation-logo-template-1.png"
+                    alt="Foundation icon"
+                    class="img-fluid rounded-circle"
+                  />
+                </a>
+                <h5>Foundation</h5>
+              </div>
+            </div>
+            <button class="btn btn-primary d-flex mx-auto mt-4">View All Categories</button>
+          </div>
+        </section>
+
+        <!-- Our Faculty Section -->
+        <section class="mb-5 p-4">
+          <div class="container">
+            <h3 class="text-center mb-4">Our Faculty</h3>
+            <div class="row">
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <img
+                      src="https://takshilainstitute.in/images/faculty/1733138621CARE.png"
+                      class="card-img-top d-block"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-footer">
+                    <h5 class="card-title">Bitu Sir</h5>
+                    <p class="text-muted mb-0">8 year + Physics</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <img
+                      src="https://takshilainstitute.in/images/faculty/1733138621CARE.png"
+                      class="card-img-top d-block"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-footer">
+                    <h5 class="card-title">Bitu Sir</h5>
+                    <p class="text-muted mb-0">8 year + Physics</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <img
+                      src="https://takshilainstitute.in/images/faculty/1733138621CARE.png"
+                      class="card-img-top d-block"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-footer">
+                    <h5 class="card-title">Bitu Sir</h5>
+                    <p class="text-muted mb-0">8 year + Physics</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <img
+                      src="https://takshilainstitute.in/images/faculty/1733138621CARE.png"
+                      class="card-img-top d-block"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-footer">
+                    <h5 class="card-title">Bitu Sir</h5>
+                    <p class="text-muted mb-0">8 year + Physics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- YouTube Section -->
+        <section class="mb-5 p-4">
+          <div class="container">
+            <h3 class="text-center mb-4">Our YouTube Channel</h3>
+            <div class="row">
+              <div class="col-md-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <a href="https://www.youtube.com/embed/m3u6IdNebaA" target="_blank">
+                      <img
+                        src="https://takshilainstitute.in/images/1732338164you-5.webp"
+                        class="card-img-top d-block"
+                        alt="card image"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-footer h-100">
+                    <h5 class="card-title">
+                      NEET 2021 Online Crash Course | 100 Days Crash Course
+                    </h5>
+                    <p class="text-muted mb-0">
+                      NEET 2021 Online Crash Course | 100 Days Crash Course | Takshila Institute
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <a href="https://www.youtube.com/embed/57Oth-Yzh0c" target="_blank">
+                      <img
+                        src="https://takshilainstitute.in/images/1732337856you-1.webp"
+                        class="card-img-top d-block"
+                        alt="card image"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-footer h-100">
+                    <h5 class="card-title">Should I Drop for NEET or IIT-JEE preparation?</h5>
+                    <p class="text-muted mb-0">
+                      Should I Drop for NEET or IIT-JEE preparation | By Rohit Gupta sir | Takshila
+                      Institute
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <a href="https://www.youtube.com/embed/tq6Wy-_o-y4" target="_blank">
+                      <img
+                        src="https://takshilainstitute.in/images/1732337916you-2.webp"
+                        class="card-img-top d-block"
+                        alt="card image"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-footer h-100">
+                    <h5 class="card-title">
+                      TNTSE Official 2023 |Takshila National Talent Scholarship Exam
+                    </h5>
+                    <p class="text-muted mb-0">
+                      TNTSE Official 2023 |Takshila National Talent Scholarship Exam | One Step
+                      towards success|
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4 mb-lg-0">
+                <div class="card border-1 h-100">
+                  <div class="card-body text-center p-0">
+                    <a href="https://www.youtube.com/embed/wUEwGmyC8yg" target="_blank">
+                      <img
+                        src="https://takshilainstitute.in/images/1732337977you-3.webp"
+                        class="card-img-top d-block"
+                        alt="card image"
+                      />
+                    </a>
+                  </div>
+                  <div class="card-footer h-100">
+                    <h5 class="card-title">Crack IIT-JEE/NEET under Delhi Gov. Scheme</h5>
+                    <p class="text-muted mb-0">
+                      Crack IIT-JEE/NEET under Delhi Gov. Scheme | Free Coaching (SC-ST, OBC, EWS) |
+                      Takshila Institute
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-5">
+          <div class="container">
+            <div class="row text-center mb-2">
+              <div class="col">
+                <h3>What Our Students Say</h3>
+                <p class="text-muted">Real experiences from students who trusted us.</p>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Testimonial 1 -->
+              <div class="col-md-4 mb-5 mb-md-4">
+                <div class="card bg-light shadow-sm border-1 rounded h-100">
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p class="mb-4">
+                        "I joined Takshila with the goal that I can plan for my JEE exam. Tests and
+                        assignments that were given to us by our Teachers helped in our preparation
+                        and made us confident. They were instrumental in improving my thoughts or
+                        ideas just as my skills and thinking capability. I owe my success to the
+                        faculties and resources of Takshila Institute."
+                      </p>
+                      <footer class="blockquote-footer">Avishek</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="col-md-4 mb-5 mb-md-4">
+                <div class="card bg-light shadow-sm border-1 rounded h-100">
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p class="mb-4">
+                        "I generally recommend every Student to proceed for your competitive exams
+                        under Takshila Institute. This Institute reinforced me a lot and I want to
+                        thank all the administrators for their valuable support and to all the
+                        Teachers for sharing their knowledge."
+                      </p>
+                      <footer class="blockquote-footer">Mayank Upadhyay</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="col-md-4 mb-5 mb-md-4">
+                <div class="card bg-light shadow-sm border-1 rounded h-100">
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p class="mb-4">
+                        "Takshila Institute has Best Facilities, an extremely eager, lively
+                        environment. NK Sir is Very helpful, extremely inspiring and entirely
+                        dependable. The environment of Takshila is so good as their students and
+                        teachers consistently help each other in their problems so that they can
+                        understand things better."
+                      </p>
+                      <footer class="blockquote-footer">Swati Jangra</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+          style="background-image: url('https://cdn.pixabay.com/photo/2016/11/05/12/38/fuzzy-1800136_1280.jpg'); background-size: cover; background-position: center;"
+        >
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="text-center">
+                  <h4 class="text-primary text-uppercase fs-6">Let's get started</h4>
+                  <h3 class="display-6 fw-semibold text-light mb-4">
+                    Download our apps & Start learning now
+                  </h3>
+                  <div class="input-group mb-4">
+                    <span class="input-group-text">+91</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your mobile number"
+                    />
+                    <button class="btn btn-primary">Get Link</button>
+                  </div>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.neeteasyapp&hl=en"
+                    class="btn p-0"
+                  >
+                    <img
+                      src="https://takshilainstitute.in/images/1717249857android-app.png"
+                      alt="Icon"
+                      class="d-inline-block align-middle"
+                    />
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.neeteasyapp&hl=en"
+                    class="btn p-0"
+                  >
+                    <img
+                      src="https://takshilainstitute.in/images/1717249870windows-app.png"
+                      alt="Icon"
+                      class="d-inline-block align-middle"
+                    />
+                  </a>
+                  <img src="/src/assets/img/cta-image.png" class="img-fluid mt-4" alt="app image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="mb-3">
+              <a href="https://takshilainstitute.in">
+                <img
+                  src="https://takshilainstitute.in/images/1732293272tashila-logo.jpeg"
+                  class="img-fluid mb-2"
+                  alt="Takshila Institute"
+                />
+              </a>
+              <p class="text-body-secondary">© 2025 Takshila Institute. All rights reserved.</p>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+              <h5>Important Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">All Courses</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Test Series</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Study Materials</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Seminar Registration</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Popular Courses</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Foundation</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">IIT JEE</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-secondary">NEET</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col mb-3">
+              <h5>Get in Touch</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="ri-map-pin-2-line text-secondary me-2"></i>
+                  Head Office, Janakpuri: A-1/169, Janakpuri, Opp. Metro Pillar No. 616
+                </li>
+                <li class="mb-2">
+                  <i class="ri-phone-line text-secondary me-2"></i> +918076986191
+                </li>
+                <li class="mb-2">
+                  <i class="ri-whatsapp-line text-secondary me-2"></i> +918076986191
+                </li>
+                <li class="mb-2">
+                  <i class="ri-mail-line text-secondary me-2"></i>contact@takshilainstitute.in
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- All Scripts -->
+    <Scripts />
+  </body>
+</html>
